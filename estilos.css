@@ -1,0 +1,221 @@
+/*
+font-family: 'Chakra Petch', sans-serif;
+*/
+*{
+    font-family: 'Chakra Petch', sans-serif;
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+.loader{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    
+}
+.disappear{
+    animation: vanish 1s forwards;
+}
+@keyframes vanish {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+body{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+h1,h2{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+.btn-wsp{
+	position: relative;
+	top: 7px;
+	left: 1px;
+}
+
+
+.img-OS{
+    width: 8rem;
+}
+.apple{
+    width: 7rem;
+}
+.linux{
+    width: 12rem;
+}
+.img-program{
+    width: 7rem;
+    display:0;
+}
+.rotacion{
+    animation-name: rotacion;
+    animation-duration:1s;
+    width: 7rem;
+    opacity: 1;
+    transition: 2s;
+}
+.info-programas{
+    height: 22rem;
+    border: 2px solid rgb(148, 148, 148);
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background:linear-gradient(to right,rgb(0, 0, 0),rgb(13, 8, 38),rgb(7, 1, 72));
+    box-shadow: 0px 10px 10px rgb(182, 182, 182);
+    color: white;
+}
+.menu-nav{
+    background:linear-gradient(to right,rgb(0, 0, 0),rgb(13, 8, 38),rgb(7, 1, 72));
+    font-family: 'Chakra Petch', sans-serif;
+    
+}
+footer{
+    background:linear-gradient(to right,rgb(0, 0, 0),rgb(13, 8, 38),rgb(7, 1, 72));
+}
+.nav-link{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.logotipo{
+    width: 4rem;
+    margin-left: 5rem;
+}
+.reparaciones{
+    background-color: blue;
+    background-image: url(img-reparacion.jpg);
+    height: 380px;
+    background-blend-mode:darken;
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-shadow: 0px 10px 10px rgb(182, 182, 182);
+}
+
+.fondo-OS{
+    background-image: url(fondo-OS.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    box-shadow: 0px 10px 10px rgb(182, 182, 182);
+}
+.img-reparaciones{
+    width: 12rem;
+}
+
+
+.bi-facebook:hover , .bi-instagram:hover{
+    color: yellow;
+}
+.computing{
+    width: 18rem;
+}
+
+
+.map{
+    border-radius: 2rem;
+}
+.img-servicio{
+    width:12rem;
+}
+
+@media (max-width: 478px){
+    .img-OS{
+        width: 5rem;
+    }
+    .apple{
+        width: 4rem;
+    }
+    .linux{
+        width: 9rem;
+    }
+}
+
+.estilo-intersection{
+    opacity: 0;
+    transform: scale(0.5);
+    
+}
+.visible{
+    opacity: 1;
+    transition: 1s;
+    transform: scale(1);
+}
+
+
+.section1{
+    background-position:center;
+    background-size: cover;
+    height: 25rem;
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+    animation: backgroundSlider infinite;
+    animation-duration:28s ;
+    width: 100%;
+    padding-top:3rem;
+}
+
+@keyframes backgroundSlider{
+    0%,100%{
+        background-image: url(fondo-carrousel.png);
+        background-position:center;
+        background-size: cover;
+        height: 25rem;
+    }
+    33%{
+        background-image: url(fondo-carrousel2.jpg);
+        background-position:center;
+        background-size: cover;
+        height: 25rem;
+    }
+    66%{
+        background-image:url(fondo-carrousel3.jpg);
+        background-position:center;
+        background-size: cover;
+        height: 25rem;
+    }
+
+    
+}
+@keyframes rotacion {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
